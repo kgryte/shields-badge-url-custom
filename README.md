@@ -38,15 +38,15 @@ var out = urls( opts );
 ```
 
 The `function` accepts the following `options`:
-*	__label__: badge label (*required*).
-*	__status__: badge status (*required*).
-*	__color__: badge color (*required*). A color may be either a named or HEX `color`.
+*	__label__: (*required*) badge label.
+*	__status__: (*required*) badge status.
+*	__color__: (*required*) badge color. A color may be either a named (e.g., `brightgreen`, `green`, `yellow`, `red`, etc) or HEX (e.g., `474747`, `eeeeee`, etc) `color`.
 *	__style__: badge style. Default: `flat`.
 *	__format__: badge format. Default: `svg`.
 *	__logo__: badge logo (>= 14px high and provided as a [data URI][data-uri]).
 *	__width__: badge width (pixels).
-*	__llink__: left side link.
-*	__rlink__: right side link.
+*	__llink__: left-side link. (note: must be provided with a right-side link.)
+*	__rlink__: right-side link. (note: must be provided with a left-side link.)
 
 
 ## Examples
