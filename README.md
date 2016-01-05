@@ -117,8 +117,8 @@ Options:
        --format format       Badge format. Default: 'svg'.
        --logo logo           Badge logo.
        --width width         Badge logo width (pixels).
-       --llink link          Left side link.
-       --rlink link          Right side link.
+       --llink link          Left side badge link.
+       --rlink link          Right side badge link.
 ```
 
 
