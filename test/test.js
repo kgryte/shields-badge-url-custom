@@ -102,7 +102,7 @@ test( 'a badge logo width can be specified', function test( t ) {
 	t.end();
 });
 
-test( 'a left-side link must have a corresponding right-side link', function test( t ) {
+test( 'a left side link must have a corresponding right side link', function test( t ) {
 	t.throws( foo, Error, 'throws error' );
 	t.end();
 	function foo() {
@@ -115,7 +115,7 @@ test( 'a left-side link must have a corresponding right-side link', function tes
 	}
 });
 
-test( 'a right-side link must have a corresponding left-side link', function test( t ) {
+test( 'a right side link must have a corresponding left side link', function test( t ) {
 	t.throws( foo, Error, 'throws error' );
 	t.end();
 	function foo() {
@@ -128,7 +128,7 @@ test( 'a right-side link must have a corresponding left-side link', function tes
 	}
 });
 
-test( 'right- and left-side links can be specified', function test( t ) {
+test( 'right and left side links can be specified', function test( t ) {
 	var out = urls({
 		'label': 'beep',
 		'status': 'boop',

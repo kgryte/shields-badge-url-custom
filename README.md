@@ -45,8 +45,8 @@ The `function` accepts the following `options`:
 *	__format__: badge format. Default: `svg`.
 *	__logo__: badge logo (>= 14px high and provided as a [data URI][data-uri]).
 *	__width__: badge width (pixels).
-*	__llink__: left-side link. (note: must be provided with a right-side link.)
-*	__rlink__: right-side link. (note: must be provided with a left-side link.)
+*	__llink__: left side link. (note: must be provided with a right-side link.)
+*	__rlink__: right side link. (note: must be provided with a left-side link.)
 
 
 ## Examples

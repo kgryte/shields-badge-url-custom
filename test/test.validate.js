@@ -232,7 +232,7 @@ test( 'if provided a `rlink` option which is not a string, the function returns 
 	t.end();
 });
 
-test( 'if a left-side link is provided, a right-side link must be provided', function test( t ) {
+test( 'if a left side link is provided, a right side link must be provided', function test( t ) {
 	var err = validate( {}, {
 		'label': 'beep',
 		'status': 'boop',
@@ -243,7 +243,7 @@ test( 'if a left-side link is provided, a right-side link must be provided', fun
 	t.end();
 });
 
-test( 'if a right-side link is provided, a left-side link must be provided', function test( t ) {
+test( 'if a right side link is provided, a left side link must be provided', function test( t ) {
 	var err = validate( {}, {
 		'label': 'beep',
 		'status': 'boop',
