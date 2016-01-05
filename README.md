@@ -32,7 +32,7 @@ var opts = {
 var out = urls( opts );
 /*
 	{
-		"image": "https://img.shields.io/badge/build-passing-brightgreen.svg?style=flat&link=#&link=#"
+		"image": "https://img.shields.io/badge/build-passing-brightgreen.svg?style=flat"
 	}
 */ 
 ```
@@ -126,7 +126,7 @@ Options:
 
 ``` bash
 $ shields-custom --label=beep --status=boop --color="474747"
-# => {"image":"https://img.shields.io/badge/beep-boop-474747.svg?style=flat&link=#&link=#"}
+# => {"image":"https://img.shields.io/badge/beep-boop-474747.svg?style=flat"}
 ```
 
 

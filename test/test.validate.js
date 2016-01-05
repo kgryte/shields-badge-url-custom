@@ -195,7 +195,8 @@ test( 'if provided a `llink` option which is not a string, the function returns 
 			'label': 'beep',
 			'status': 'boop',
 			'color': 'red',
-			'llink': values[ i ]
+			'llink': values[ i ],
+			'rlink': 'https://github.com/dstructs/matrix/issues'
 		});
 		t.ok( err instanceof TypeError, 'returns a TypeError when provided ' + values[ i ] );
 	}
@@ -223,10 +224,33 @@ test( 'if provided a `rlink` option which is not a string, the function returns 
 			'label': 'beep',
 			'status': 'boop',
 			'color': 'red',
+			'llink': 'https://github.com/dstructs/matrix',
 			'rlink': values[ i ]
 		});
 		t.ok( err instanceof TypeError, 'returns a TypeError when provided ' + values[ i ] );
 	}
+	t.end();
+});
+
+test( 'if a left-side link is provided, a right-side link must be provided', function test( t ) {
+	var err = validate( {}, {
+		'label': 'beep',
+		'status': 'boop',
+		'color': 'red',
+		'llink': 'https://github.com/dstructs/matrix'
+	});
+	t.ok( err instanceof Error, 'return an Error' );
+	t.end();
+});
+
+test( 'if a right-side link is provided, a left-side link must be provided', function test( t ) {
+	var err = validate( {}, {
+		'label': 'beep',
+		'status': 'boop',
+		'color': 'red',
+		'rlink': 'https://github.com/dstructs/matrix/issues'
+	});
+	t.ok( err instanceof Error, 'return an Error' );
 	t.end();
 });
 
