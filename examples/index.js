@@ -5,7 +5,7 @@ var fnames = require( 'datasets-female-first-names-en' );
 var randc = require( 'rand-color-hexadecimal' );
 var urls = require( './../lib' );
 
-// Create random personalized greeting badges...
+// Badges for everyone! Create random personalized greeting badges...
 var badge;
 var len;
 var idx;
