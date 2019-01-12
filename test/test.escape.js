@@ -46,7 +46,7 @@ test( 'function replaces every dash and every underscore with two equivalent cha
 	t.end();
 });
 
-test( 'function urlencodes status', function test( t ) {
+test( 'function performs URL encoding', function test( t ) {
 	var out;
 	
 	out = escape( 'boop%' );
