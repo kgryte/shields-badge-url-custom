@@ -45,3 +45,12 @@ test( 'function replaces every dash and every underscore with two equivalent cha
 
 	t.end();
 });
+
+test( 'function performs URL encoding', function test( t ) {
+	var out;
+	
+	out = escape( 'boop%' );
+	t.equal( out, 'boop%25' );
+
+	t.end();
+});
